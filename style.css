@@ -1,0 +1,107 @@
+*{
+	box-sizing: border-box; /*позволяет значения padding и border вычитать из ширины и длины блока, т.е. в нашем примере div останется с фиксированными параметрами, но для контента останется 60х60 px*/
+}
+
+/*Стилизация первого блока "ЗАГОЛОВОК"*/
+
+
+body{
+	font-family: Tahoma;  /*Свойство шрифтов*/
+	line-height: 1.5;   /*Межстрочный интервал*/
+	color: #333333;  /*Цвет текста для всего класса*/
+	 }
+
+.section{
+	padding: 30px 10%;  /*Стилизуем значение полей вокруг видео*/
+}
+	
+.header{
+
+	margin-top: 80px; /*Отступ заголовка от верхнего элемента */
+	font-size: 24px;/*Размер шрифта// Установили для всего класса один размер шрифта*/
+	text-align: center;   /*Выравнивание текста по центру*/
+}
+
+.header span {
+	
+	display: block;
+	font-weight: 300;  /*толщина шрифта*/
+}
+
+.header strong{
+
+	font-weight: 900; /*Толщина шрифта*/
+	text-transform: uppercase; /*Все буквы заглавные*/
+}
+
+/*Стилизация второго блока "Текст и видео"*/
+
+.main{
+	text-align: center;
+	margin-top: 80px;   /*Отступ видео от верхнего края заголовка*/
+}
+
+.video, .form{
+	display: inline-block;  /*Строчно блочный*/
+	
+	vertical-align: top  /*Элементы будут выравниваться по вертикали в ровень*/
+}
+
+.form {
+	margin-left: 30px;
+	text-align: center;
+	padding: 20px; /*Отступ по краям*/
+	border: 5px solid #2727d9;   /*Устанавливаем границы*/
+}
+
+.form-header {
+	text-align: center;  /*Текст по центру*/
+	font-size: 20px;  /*Размер шрифта*/
+	font-weight: 900;  /*Жирность шрифта*/
+	margin-bottom: 42px;  /*Отступы от элементов между ними*/
+}
+
+.form input{  /*Стилизация мини блока Ваше Имя*/
+display: block;
+margin-top: 11px;  /*Отступ видео от верхнего края заголовка*/
+width: 300px;	
+padding: 17px;  /*Внутренний отступ по краям*/
+font-size: 18px; /*Размер шрифта*/
+border: 1px solid #333333; /*Ширина и цвет границы*/
+
+}
+
+
+.btn {
+	font-size: 18px; /*Размер текста*/
+	font-weight: 900; /*Жирность текста*/
+	color: #fff;
+	background-color: #2727d9;
+	border: none; /*Отключаем border*/
+	width: 300px;
+	height: 55px;
+	display: block;
+	margin: 11px auto 0px;
+
+}
+
+
+/*Стилизация третьего блока*/
+
+.col{
+	display: inline-block;
+	text-align: center;
+	margin: 10px 50px;
+}
+
+.feature-header{
+	text-align: center; /*Текст по центру*/
+	text-transform: uppercase;  /*Все буквы большие*/
+	font-weight: 900;  /*жирный */
+	font-size: 24px;
+}
+
+.feature{
+	text-align: center;
+	margin: 60px auto;
+}
